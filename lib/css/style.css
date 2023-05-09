@@ -9,7 +9,7 @@
 .aic {align-items: center}
 .jcc {justify-content: center}
 
-.sec2 { overflow-x: hidden; padding-bottom: 50px; }
+.sec2 { overflow-x: hidden; padding-bottom: 50px; transform: rotate(10deg); }
 
 .sec2_gallery li { flex-shrink: 0; width: clamp(500px, 60vw, 800px); padding-right: 1rem; }
 
