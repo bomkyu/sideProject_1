@@ -25,16 +25,18 @@
 .slide { width: 100%; flex-shrink: 0; text-align: center; font-size: 3em; }
 
 .sec3 { overflow: hidden; height: 100vh; }
-.sec3 .inner { max-width: 1280px; width: 100%; margin:0 auto; }
-.sec3 .inner > img { position: absolute; height: 100%; top:0; left:50%; transform: translateX(-50%); }
-
+.sec3 dl { position: relative; display: flex; width: 100%; }
+.sec3 dl > dt { width: 500px; height: 500px; background-color: #ffffff1c; z-index: 999;}
+.sec3 dl > dd {position: relative; width: calc(100% - 500px); z-index: 9;}
 .sec3 .horizental_list > img { position: absolute; top:50%; left: 50%; transform:translate(-50%, -50%); z-index: 999; }
 .sec3 .sec3_list {display:flex; width: 420vw;}
 .sec3 .sec3_list > li {max-width: 1280px; width: 80vw; margin-right: 1vw; margin-left: 1vw;}
 
 .sec4 {  }
+
+
 .col_3 { display: flex; gap: 30px; width: 100%; flex-wrap: wrap; }
-.col_3 li { width: calc(33.3333% - 20px); }
+.col_3 li { width: calc(33.3333% - 60px); }
 footer { height: 400px; background-color: #ccc; }
 
 
