@@ -26,8 +26,10 @@
 
 .sec3 { overflow: hidden; height: 100vh; }
 .sec3 dl { position: relative; display: flex; width: 100%; }
-.sec3 dl > dt { width: 500px; height: 500px; background-color: #ffffff1c; z-index: 999;}
-.sec3 dl > dd {position: relative; width: calc(100% - 500px); z-index: 9;}
+.sec3 dl > dt {position: relative; width: 600px; left: 50px; z-index: 999;}
+.sec3 dl > dt h2 { font-size: 64px; font-weight: bold; }
+.sec3 dl > dt h2 > span { font-size: inherit; background: linear-gradient(#292931 0%, #FF0000 100%); background-clip: text; -webkit-background-clip: text; font-weight: inherit; color: transparent; }
+.sec3 dl > dd {position: relative; width: calc(100% - 600px); z-index: 9;}
 .sec3 .horizental_list > img { position: absolute; top:50%; left: 50%; transform:translate(-50%, -50%); z-index: 999; }
 .sec3 .sec3_list {display:flex; width: 420vw;}
 .sec3 .sec3_list > li {max-width: 1280px; width: 80vw; margin-right: 1vw; margin-left: 1vw;}
