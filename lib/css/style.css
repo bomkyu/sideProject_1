@@ -1,8 +1,10 @@
 :root { font-size: 16px }
-
+html {
+    scroll-behavior: smooth;
+  }
 .wrapper { display: flex; }
 .inner { position: relative; max-width: 1280px; width: 100%; margin: 0 auto; }
-.title { font-size: 58px; font-weight: bold; }
+.title { font-size: 58px; font-weight: bold; margin-top: 60px; }
 
 /* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
 .scroll_hidden::-webkit-scrollbar { display: none; }
@@ -14,7 +16,7 @@
 .aic {align-items: center}
 .jcc {justify-content: center}
 
-.hori_title { opacity: 0; }
+h2.title { opacity: 0; }
 
 .sec2 { overflow-x: hidden; padding-bottom: 50px; }
 .sec2 > .deg { transform: rotate(10deg); transform-origin: 50% 50%; }
@@ -36,12 +38,91 @@
 .sec3 .sec3_list {display:flex; width: 420vw;}
 .sec3 .sec3_list > li {max-width: 1280px; width: 80vw; margin-right: 1vw; margin-left: 1vw;}
 
-.sec4 {  }
+.list_show { display: flex; margin-top: 60px; gap: 30px; }
+.list_show > li { position: relative; width: calc(33.3333% - 15px); border-radius: 30px; box-shadow: 0px 0px 20px 0px #CCC; overflow: hidden; }
+.list_show > li::after { display: block; padding-top: 100%; content:""; }
+.list_show > li > .list_inner { position: absolute; width: 100%; height: 100%; padding:40px; left: 0; top: 0; }
 
+.list_show > li:nth-of-type(1) { background: linear-gradient(0deg, rgba(227,79,38,1) 0%, rgba(255,126,0,1) 100%); }
+.list_show > li:nth-of-type(2) { background: linear-gradient(0deg, rgba(21,114,182,1) 0%, rgba(0,147,255,1) 100%); }
+.list_show > li:nth-of-type(3) { background: linear-gradient(0deg, rgba(247,223,30,1) 0%, rgba(255,227,0,1) 100%); }
+
+.list_show > li:nth-of-type(1) > .list_inner::before { position: absolute; display: block; right: 20px; bottom: 20px; font-size: 100px; color:#FFF; font-weight: bold; content:"HTML" }
+.list_show > li:nth-of-type(2) > .list_inner::before { position: absolute; display: block; right: 20px; bottom: 20px; font-size: 100px; color:#FFF; font-weight: bold; content:"CSS" }
+.list_show > li:nth-of-type(3) > .list_inner::before { position: absolute; display: block; right: 20px; bottom: 20px; font-size: 100px; color:#FFF; font-weight: bold; content:"JS" }
+.list_show > li > .list_inner > p.text { font-size: 28px; line-height: 1.5; font-weight: bold; color: #FFF; }
+
+.sec5 { margin-top: 120px; }
+.sec5 .list_show > li:nth-of-type(1) { background: #FFF; }
+.sec5 .list_show > li:nth-of-type(1) > .list_inner::before { position: absolute; display: block; right: 20px; bottom: 20px; font-size: 100px; color:#000; font-weight: bold; content:"Notion" }
+.sec5 .list_show > li:nth-of-type(1) p.text { color: #000; }
+
+.sec5 .list_show > li:nth-of-type(2) { background: linear-gradient(0deg, rgba(24,23,23,1) 0%, rgba(0,0,0,1) 100%); }
+.sec5 .list_show > li:nth-of-type(2) > .list_inner::before { content:"GIT" }
 
 .col_3 { display: flex; gap: 30px; width: 100%; flex-wrap: wrap; }
 .col_3 li { width: calc(33.3333% - 60px); }
-footer { height: 400px; background-color: #ccc; }
+
+
+/* stroy */
+.sec6 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.sec6 .bgWrap {
+  width: 100%;
+  height: 100%;
+}
+.sec6 .bgWrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: 0;
+}
+.sec6 .bgWrap img:first-of-type {
+  opacity: 1;
+}
+.sec6 .textWrap .step {
+  transform: translate(-50%, -50%);
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #fff;
+}
+.sec6 .textWrap .step1 {
+  color: #000;
+  left: 50%;
+  top: 50%;
+}
+.sec6 .textWrap .step2 {
+  left: 80%;
+  top: 30%;
+}
+.sec6 .textWrap .sub {
+  font-size: 35px;
+  overflow: hidden;
+}
+.sec6 .textWrap .sub span {
+  opacity: 0;
+  transform: translateY(100%);
+}
+.sec6 .textWrap .main {
+  font-size: 80px;
+  overflow: hidden;
+}
+.sec6 .textWrap .main span {
+  transform: translateY(100%);
+  opacity: 0;
+}
 
 
 
