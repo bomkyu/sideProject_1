@@ -100,5 +100,6 @@ h2.title { opacity: 0; }
 }
 
 @media all and (max-width:480px) {
+  .list_show > li > .list_inner > p.text { font-size: 28px; }
   .list_show > li { width: calc(100% - 5px); }
 }
