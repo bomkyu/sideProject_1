@@ -1,0 +1,73 @@
+{
+    "sectionData" : [
+        {
+            "id" : 0,
+            "title" : "Buy Me!",
+            "subTitle" : "팀프로젝트",
+            "content" : "그린컴퓨터아카데미에서 진행한 팀프로젝트이며 개발자를 구매한다는 컨셉의 반응형 웹사이트 입니다. 팀장을 맡았고 파일분리, Git세팅, Notion등 토대를 잡았고, About과 Buy페이지(리스트 및 선택 기능) 작업을 담당했습니다.",
+            "imgUrl" : "./images/img_sec1.png",
+            "people" : [
+                {
+                    "name" : "서범규"
+                },
+                {
+                    "name" : "이태윤"
+                },
+                {
+                    "name" : "조혜민"
+                }
+            ],
+            "siteUrl" : "https://bomkyu.github.io/teamProject/",
+            "gitUrl" : "https://github.com/bomkyu/teamProject"
+        },
+        {
+            "id" : 1,
+            "title" : "N/B",
+            "subTitle" : "개인프로젝트",
+            "content" : "여행다닐때 항상 총무 역할을 했는데 금액을 나누기가 힘들어서 기획한 적응형 사이트 N/B입니다. FireBase의 Cloud Database를 사용하여 회원가입, 글등록, 친구추가 기능을 구현하였고, GooglePlace 및 GoogleMap기능도 사용했습니다. 그러나 기능구현에 아쉬움이 남아 react로 리팩토링 진행하려고 합니다.",
+            "imgUrl" : "./images/img_sec2.png",
+            "siteUrl" : "https://bomkyu.github.io/public/",
+            "gitUrl" : "https://github.com/bomkyu/public"
+        }
+    ],
+    "skill" : [{
+        "front" : [
+            {
+                "id" : 0,
+                "name" : "HTML"
+            },
+            {
+                "id" : 1,
+                "name" : "CSS"
+            },
+            {
+                "id" : 2,
+                "name" : "JAVASCRIPT"
+            },
+            {
+                "id" : 3,
+                "name" : "REACT"
+            }
+        ]
+    },
+    {
+        "back" : [
+            {
+                "id" : 0,
+                "name" : "FireBase"
+            }
+        ]
+    },
+    {
+        "communications" : [
+            {
+                "id" : 0,
+                "name" : "NOTION"
+            },
+            {
+                "id" : 1,
+                "name" : "GIT"
+            }
+        ]
+    }]
+}
